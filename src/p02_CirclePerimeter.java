@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.Scanner;
 
 /**
@@ -9,7 +11,8 @@ public class p02_CirclePerimeter {
 
         double r = Double.parseDouble(scanner.nextLine());
 
-        double perimeter = 2 * Math.PI * r;
+        BigDecimal perimeter = BigDecimal.valueOf(2) .multiply(BigDecimal.valueOf(Math.PI))
+                .multiply(BigDecimal.valueOf(r), new MathContext(15));
 
         System.out.printf("%.12f", perimeter);
     }
