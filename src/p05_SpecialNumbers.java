@@ -27,7 +27,7 @@ public class p05_SpecialNumbers {
                     System.out.println("False");
                 }
                 sum = 0;
-                numMinulLastDigit = 0;
+               // numMinulLastDigit = 0;
             }
         }
     }
